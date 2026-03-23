@@ -1,0 +1,7 @@
+FastAPI
+uvicorn
+opencv-python
+mediapipe
+scikit-learn
+numpy
+joblib
