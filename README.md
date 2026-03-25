@@ -1,32 +1,48 @@
-# AI Cricket Bowling Coach
+# AI Cricket Bowling Coach — BowlCoach AI
 
-## Overview
-The AI Cricket Bowling Coach is an innovative application that leverages artificial intelligence to enhance the skills of cricket bowlers. The application provides real-time feedback, personalized training plans, and performance analytics to help bowlers improve their techniques and strategies on the field.
+A production-grade **Next.js** web application with real **ML-powered video analysis** for cricket bowling coaching.
 
-## Setup Instructions
-1. **Clone the Repository**  
-   Run the following command to clone the repository:
-   ```bash
-   git clone https://github.com/kamaldas20/ai-cricket-bowling-coach.git
-   ```
+## Features
 
-2. **Install Dependencies**  
-   After navigating to the cloned directory, install the necessary dependencies using:
-   ```bash
-   npm install
-   ```
+- 🤖 **3 AI Agents**: Coach Agent, Performance Analyst, ML Video Analysis Agent
+- 📹 **Real ML Video Analysis**: MediaPipe PoseLandmarker processes bowling videos in-browser
+- 📊 **Performance Dashboard**: Chart.js charts tracking speed, accuracy, and swing trends
+- 🏋️ **Training Plans**: Personalized warmup, skill, fitness, and match simulation plans
+- 🩹 **Injury Prevention**: Alerts for high workload and jerk bowling risks
+- 🎯 **Pro Benchmarks**: Compare against 130+ km/h speed, 85% accuracy, 70% swing
 
-3. **Configuration**  
-   Make sure to set your configuration settings in the `.env` file as required.
+## Tech Stack
 
-4. **Run the Application**  
-   Start the application with the following command:
-   ```bash
-   npm start
-   ```
+- **Next.js 14** (App Router)
+- **MediaPipe Vision** (PoseLandmarker for real pose detection)
+- **Chart.js** + react-chartjs-2 (dashboard charts)
+- **Vanilla CSS** (premium dark theme with glassmorphism)
 
-5. **Access the Application**  
-   Open your web browser and navigate to `http://localhost:3000` to access the AI Cricket Bowling Coach.
+## Getting Started
 
-## Contributing
-Contributions are welcome! Please read the CONTRIBUTING.md file for details on our code of conduct, and the process for submitting pull requests to us.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## Pages
+
+| Page | Route | Description |
+|------|-------|-------------|
+| Home | `/` | Landing page with feature overview |
+| Analysis | `/analysis` | Upload video / enter stats for AI coaching |
+| Dashboard | `/dashboard` | Performance trends and pro benchmarks |
+| Training | `/training` | Generate personalized training plans |
+
+## API
+
+- `POST /api/analyze` — Multi-agent analysis endpoint
+- `GET /api/sessions` — Historical session data
+
+## Deploy to Vercel
+
+```bash
+npx vercel
+```

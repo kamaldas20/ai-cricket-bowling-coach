@@ -1,0 +1,6 @@
+node_modules
+.next
+ml_engine/model.pkl
+ml_engine/training_data.npz
+ml_engine/learning_data.json
+ml_engine/__pycache__
